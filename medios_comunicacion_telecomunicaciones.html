@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tipos de Medios o Canales en Telecomunicaciones</title>
+  <meta name="description" content="Página educativa sobre los tipos de medios (canales) de comunicación en telecomunicaciones.">
+  <style>
+    :root{--bg:#0b0f14;--card:#0f1720;--accent:#0ea5ff;--muted:#94a3b8;--glass: rgba(255,255,255,0.03);}    
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#05060a 0%, #071026 60%);color:#e6eef8;line-height:1.5}
+    header{padding:28px 24px;border-bottom:1px solid rgba(255,255,255,0.03);display:flex;gap:20px;align-items:center}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#5eead4);display:flex;align-items:center;justify-content:center;color:#041024;font-weight:700}
+    h1{font-size:1.4rem;margin:0}
+    nav{margin-left:auto}
+    .navlinks a{color:var(--muted);text-decoration:none;margin-left:12px;padding:8px 10px;border-radius:8px}
+    .navlinks a:hover{background:var(--glass);color:var(--accent)}
+
+    main{display:grid;grid-template-columns:320px 1fr;gap:22px;padding:22px}
+    aside{background:var(--card);padding:16px;border-radius:12px;min-height:360px}
+    .sitemap{font-size:0.95rem;color:var(--muted)}
+    .sitemap a{display:block;color:#cfe9ff;text-decoration:none;margin:8px 0}
+
+    section.card{background:rgba(10,14,20,0.6);padding:18px;border-radius:12px;backdrop-filter: blur(4px)}
+    .hero{padding:18px;margin-bottom:14px}
+
+    .media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .media-item{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:10px}
+    .media-item h3{margin:6px 0}
+    .thumb img{width:100%; border-radius:8px; display:block}
+
+    .controls{display:flex;gap:8px;align-items:center;margin-top:12px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:8px;color:var(--accent);cursor:pointer}
+    .btn:active{transform:translateY(1px)}
+
+    footer{padding:18px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03)}
+
+    @media (max-width:900px){main{grid-template-columns:1fr;padding:12px}aside{order:2}header{flex-direction:column;align-items:flex-start}nav{margin-left:0}}
+
+    .meta{font-size:0.86rem;color:var(--muted)}
+    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:0.8rem;color:var(--muted)}
+    .sitemap-list{margin-top:8px}
+    .cite{font-size:0.9rem;color:var(--muted);line-height:1.45}
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">TF</div>
+    <div>
+      <h1>Tipos de Medios o Canales — Telecomunicaciones</h1>
+      <div class="meta">Proyecto: Fundamentos de Telecomunicaciones — Emiliano N. Rubio Valdez & Damaris R. Hernández</div>
+    </div>
+  </div>
+  <nav>
+    <div class="navlinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#guiados">Medios Guiados</a>
+      <a href="#no-guiados">Medios No Guiados</a>
+      <a href="#impacto">Ética & Impacto</a>
+      <a href="#bibliografia">Bibliografía</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<aside>
+  <section class="card">
+    <h3>Mapa del sitio</h3>
+    <p class="sitemap">Navega rápidamente por las secciones del proyecto:</p>
+    <div class="sitemap-list">
+      <a href="#inicio">Inicio — Presentación</a>
+      <a href="#guiados">Medios guiados (cable)</a>
+      <a href="#no-guiados">Medios no guiados (inalámbricos)</a>
+      <a href="#impacto">Ética, ecológico y económico</a>
+      <a href="#bibliografia">Bibliografía (APA)</a>
+    </div>
+    <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+    <div class="controls">
+      <button class="btn" onclick="scrollToSection('guiados')">← Anterior</button>
+      <button class="btn" onclick="scrollToSection('no-guiados')">Siguiente →</button>
+    </div>
+  </section>
+</aside>
+
+<section style="padding:0 12px">
+<article id="inicio" class="card hero">
+  <h2>Introducción</h2>
+  <p class="sitemap">Esta página presenta los <strong>tipos de medios o canales de comunicación</strong> utilizados en telecomunicaciones, clasificándolos en <em>guiados</em> (conductores físicos como el cable) y <em>no guiados</em> (medios inalámbricos). El propósito es explicar, ilustrar y reflexionar sobre su funcionamiento, ventajas, limitaciones y su impacto social y ambiental.</p>
+  <div style="margin-top:14px; display:grid; grid-template-columns:1fr 300px; gap:12px">
+    <div>
+      <p class="meta">Los medios guiados transmiten señales por un medio físico —cobre o fibra— y son preferidos cuando se requiere alta calidad y baja interferencia. Los medios no guiados usan el espacio libre (radio, microondas, satélites) y permiten movilidad y cobertura amplia.</p>
+    </div>
+    <div style="border-radius:10px; overflow:hidden; background:#04121b; display:flex;align-items:center;justify-content:center; padding:8px">
+      <iframe width="100%" height="170" src="https://www.youtube.com/embed/cgS48K8k-lg" title="4 Tipos de medios de transmisión en Telecomunicaciones" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</article>
+
+<article id="guiados" class="card" style="margin-top:14px">
+  <h2>Medios Guiados</h2>
+  <p class="cite">Los medios guiados requieren un medio físico que dirija la propagación de la señal. Se usan en redes fijas y para enlaces de alta capacidad.</p>
+  <div class="media-grid" style="margin-top:12px">
+    <div class="media-item">
+      <div class="thumb"><img src="coaxial.png" alt="Cable coaxial"></div>
+      <h3>Cable coaxial</h3>
+      <p class="meta">Estructura: conductor central, aislante, malla y cubierta. Uso: TV por cable, redes cableadas legacy. Ventajas: resistente y económico para distancias cortas.</p>
+    </div>
+    <div class="media-item">
+      <div class="thumb"><img src="utp.png" alt="Par trenzado"></div>
+      <h3>Par trenzado</h3>
+      <p class="meta">Tipos: UTP, STP. Uso: redes Ethernet. Ventajas: barato y fácil de instalar. Limitación: susceptibilidad a interferencia en distancias largas.</p>
+    </div>
+    <div class="media-item">
+      <div class="thumb"><img src="fibraoptica.png" alt="Fibra óptica"></div>
+      <h3>Fibra óptica</h3>
+      <p class="meta">Transmisión por pulsos de luz. Ventajas: ancho de banda muy alto, baja atenuación y resistente a EMI. Uso: backbone de internet, enlaces de larga distancia.</p>
+    </div>
+  </div>
+</article>
+
+<article id="no-guiados" class="card" style="margin-top:14px">
+  <h2>Medios No Guiados</h2>
+  <p class="cite">Estos medios no requieren un conductor físico; la señal se propaga por el aire o el espacio libre.</p>
+  <ul>
+    <li>Radiofrecuencia</li>
+    <li>Microondas</li>
+    <li>Satelital</li>
+    <li>Infrarrojo y láser</li>
+  </ul>
+</article>
+
+<article id="impacto" class="card" style="margin-top:14px">
+  <h2>Ética, ecológico y económico</h2>
+  <p>En el uso de los medios de comunicación se deben considerar aspectos éticos, históricos, políticos, ecológicos y económicos. Por ejemplo:</p>
+  <ul>
+    <li>Impacto ambiental de cables y equipos obsoletos.</li>
+    <li>Acceso equitativo a la información y conectividad.</li>
+    <li>Costos de implementación y mantenimiento de redes.</li>
+  </ul>
+</article>
+
+<article id="bibliografia" class="card" style="margin-top:14px">
+  <h2>Bibliografía (APA)</h2>
+  <ul class="cite">
+    <li>Forouzan, B. A. (2013). <em>Data Communications and Networking</em>. McGraw-Hill.</li>
+    <li>Tanenbaum, A. S., & Wetherall, D. J. (2011). <em>Redes de computadoras</em>. Pearson Educación.</li>
+    <li>Stallings, W. (2016). <em>Comunicación de datos y redes de computadores</em>. Pearson.</li>
+  </ul>
+</article>
+
+</section>
+</main>
+
+<footer>
+  Proyecto educativo — Fundamentos de Telecomunicaciones — Emiliano N. Rubio Valdez & Damaris R. Hernández
+</footer>
+
+<script>
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
